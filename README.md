@@ -17,8 +17,10 @@ Install the odp-cli package along with its dependencies:
     pip install -e .
 
 ## Configuration
-Configuration is read from a `.env` file, which SAEON will provide upon request
-for authorized clients. See `.env.example` for an example.
+Configuration is read from the environment. If a `.env` file is present, it will
+be loaded automatically. See `.env.example` for an example.
+
+SAEON will provide the appropriate configuration upon request for authorized clients.
 
 ## CLI usage
 Currently only the catalog API endpoints have been implemented in the CLI.
