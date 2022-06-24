@@ -38,3 +38,15 @@ List published catalog records:
 The harvest result set is paged; to see paging options, type:
 
     odp catalog harvest --help
+
+## Python client usage
+Example of retrieving the list of project definitions from the project API:
+
+    from odp.api import ODPClient
+    client = ODPClient()
+    r = client.get('/project')
+
+To 'pretty print' the response as the CLI does:
+
+    from odp.cli.utils import echo
+    echo(r)
